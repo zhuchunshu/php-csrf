@@ -15,6 +15,9 @@
   "autoload": {
     "psr-4": {
       "Csrf\\": "src/Csrf/"
-    }
+    },
+    "files": [
+      "src/helpers.php"
+    ]
   }
 }
