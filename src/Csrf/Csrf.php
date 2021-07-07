@@ -3,9 +3,6 @@ namespace Csrf;
 use Delight\Cookie\Cookie;
 use Illuminate\Support\Str;
 
-require_once __DIR__."/../../vendor/autoload.php";
-
-
 class Csrf {
 
     /**
