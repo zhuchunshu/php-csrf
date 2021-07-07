@@ -1,0 +1,20 @@
+{
+  "name": "zhuchunshu/php-csrf",
+  "description": "php-csrf",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "zhuchunshu",
+      "email": "laravel@88.com"
+    }
+  ],
+  "require": {
+    "delight-im/cookie": "^3.4",
+    "laravel/helpers": "^1.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Csrf\\": "src/Csrf/"
+    }
+  }
+}
