@@ -9,9 +9,9 @@ class Csrf {
      * 设置Csrf-token
      * @return string
      */
-    public static function set(){
+    public static function set($time){
         $token = Str::random();
-        Cookie::setcookie("csrf_token",$token,time()+120);
+        Cookie::setcookie("csrf_token",$token,time()+$time);
         return $token;
     }
 
@@ -27,9 +27,9 @@ class Csrf {
      * 获取Csrf-token
      * @return mixed
      */
-    public static function get(){
+    public static function get($time=1200){
         if(!self::has()){
-            return self::set();
+            return self::set($time);
         }
         return Cookie::get("csrf_token");
     }

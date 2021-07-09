@@ -1,9 +1,10 @@
 ## php-csrf
 ### 获取取当前 CSRF Token的值
 ```php
-return csrf_token();
+// $time为token有效期
+return csrf_token($time=120);
 // or
-return \Csrf\Csrf::get();
+return \Csrf\Csrf::get($time);
 ```
 ### 验证Csrf-token
 ```php
